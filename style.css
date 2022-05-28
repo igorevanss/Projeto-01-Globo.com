@@ -4,13 +4,17 @@ body {
   font-family: 'Encode Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header {
+.container header {
   width: 1250px;
   height: 80px;
   display: flex;
@@ -18,12 +22,8 @@ header {
   align-items: center;
 }
 
-header .header-img {
+.container header img {
   width: 171px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .line-top {
@@ -43,6 +43,10 @@ nav {
 h2 {
   font-size: 19px;
   font-weight: bold;
+}
+
+h2:hover {
+  filter: brightness(120%);
 }
 
 .red {
@@ -90,12 +94,38 @@ h2 {
   font-size: 20px;
 }
 
+.litle-text {
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .content {
   width: 1250px;
   height: 100%;
   display: flex;
   margin-top: 35px;
   margin-bottom: 70px;
+}
+
+.content section:last-of-type {
+  display: flex;
+}
+
+.content section:last-of-type div div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content section:last-of-type img {
+  width: 240px;
+  height: 128px;
+  border-radius: 12px;
+}
+
+.content img:hover {
+  filter: invert(15%);
+  transition: 1s;
 }
 
 .horizontal-line {
@@ -106,65 +136,43 @@ h2 {
   margin-bottom: 35px;
 }
 
-.main-news, .sn-news, .rd-news, .amusement-news {
+main, .second-news div, .third-news div {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.second-news {
+.second-news, .third-news {
   display: flex;
   gap: 24px;
 }
 
-.nd-news {
-  font-size: 18px;
-}
-
-.sn-news img {
+.second-news div img {
   width: 193px;
   height: 110px;
   border-radius: 12px;
 }
 
+.black.nd-news {
+  font-size: 18px;
+}
+
 .vertical-line {
-  height: 780px;
+  height: 815px;
   width: 1px;
   background-color: #EBEDEF;;
   margin-left: 35px;
   margin-right: 35px;
 }
 
-.mn-text {
-  font-size: 52px;
-  font-weight: bold;
-}
-
 .red.mn-text {
   margin-bottom: 20px;
-}
-
-.litle-text {
-  font-size: 14px;
-}
-
-.third-news {
-  display: flex;
-  gap: 24px;
-}
-
-.right-side {
-  display: flex;
+  font-size: 52px;
+  font-weight: bold;
 }
 
 .amusement-left,.amusement-right {
   display: flex;
   flex-direction: column;
   gap: 42px;
-}
-
-.amusement-news img {
-  width: 240px;
-  height: 128px;
-  border-radius: 12px;
 }
